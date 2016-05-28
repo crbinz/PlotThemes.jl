@@ -18,7 +18,8 @@ const _stata_colors =  Dict{Symbol, Tuple}(
                        :brown => (156, 136, 71),
                        :erose => (191, 161, 156),
                        :gold => (255, 210, 0),
-                       :bluishgray => (217, 230, 235))
+                       :bluishgray => (217, 230, 235),
+                       )
 
 _get_stata_color(c) = _255_to_1(c, _stata_colors)
 
