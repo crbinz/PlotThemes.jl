@@ -3,7 +3,10 @@
 #                        :emerald, :brown, :erose, :gold, :bluishgray)
 
 const _ggplot2_colors =  Dict{Symbol, Tuple}(
-                       :grey30 => (229, 229, 229),
+                       :grey92 => (235, 235, 235),
+                       :grey85 => (221, 221, 221),
+                       :grey30 => (93, 93, 93),
+                       :grey20 => (65, 65, 65), #
                        )
 
 _get_ggplot2_color(c) = _255_to_1(c, _ggplot2_colors)
@@ -17,9 +20,9 @@ add_theme(:ggplot2_base,
 
 add_theme(:ggplot2,
           base = :ggplot2_base,
-          bginside = _get_ggplot2_color(:grey30),
+          bginside = _get_ggplot2_color(:grey92),
           fg       = :white,
-          fgtext   = :gray,
+          fgtext   = _get_ggplot2_color(:grey20),
           fgguide  = :black)
 
 add_theme(:ggplot2_grey, base = :ggplot2)
