@@ -8,4 +8,5 @@ module PlotThemes
     include("ggplot2.jl")
     include("solarized.jl")
     include("stata.jl")
+    include("seaborn.jl")
 end # module
