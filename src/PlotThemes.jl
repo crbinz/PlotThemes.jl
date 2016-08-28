@@ -9,4 +9,5 @@ module PlotThemes
     include("solarized.jl")
     include("stata.jl")
     include("seaborn.jl")
+    include("dissertation.jl")
 end # module
